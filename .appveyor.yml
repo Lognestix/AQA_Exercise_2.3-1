@@ -1,0 +1,18 @@
+image: Ubuntu  # образ для сборки
+
+stack: jdk 11  # версия JDK
+
+branches:
+  only:
+    - master  # ветка git
+
+build: off  # для использования своего скрипта сборки
+
+install:
+  # запуск SUT (& означает, что в фоновом режиме - не блокируется терминал для запуска тестов)
+  - java -jar ./artifacts/app-card-delivery.jar &
+
+build_script:
+  - chmod +x gradlew #  предоставление прав на запуск файла gradlew
+  # запуск тестов, параметр -Dselenide.headless=true отключает графический интерфейс
+  - ./gradlew test -Dselenide.headless=true --info  # флаг --info позволяет выводить больше информации
