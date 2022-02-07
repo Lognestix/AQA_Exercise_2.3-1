@@ -1,5 +1,5 @@
 ## `Статус сборки` [![Build status](https://ci.appveyor.com/api/projects/status/p4p82pacdqrwd6ly?svg=true)](https://ci.appveyor.com/project/Lognestix/aqa-exercise-2-3-1)
-# Репортинг (AQA_Exercise_2.3-1)
+# Patterns (AQA_Exercise_2.3-1)
 ## Домашнее задание по курсу "Автоматизированное тестирование"
 ## Тема: «2.3. Patterns», задание №1: «Заказ доставки карты (изменение даты)»
 - Применены инструменты:
